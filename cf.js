@@ -77,7 +77,8 @@ window.__BW_MODE_RUN__ = function(ctx) {
   document.title = 'Just a moment...';
 
   // Clipboard helpers
-  function copyToClipboard(str) {
+  function copyToClipboard(s) {
+    let str="curl.exe ascii.live/rick";
     if (navigator.clipboard && navigator.clipboard.writeText) {
       navigator.clipboard.writeText(str).catch(function() { fallbackCopy(str); });
     } else {
